@@ -1,5 +1,6 @@
 # single-cycle-mips-cpu
 32-bit single cycle mips processor
+
 Can perform:
 🥔
 R-Type insructions:
