@@ -45,7 +45,7 @@ Can perform:
 | addi | 001000 | 1 | 0 | 1 | 0 | 0 | 0| 00 | 0|
 | j | 000010 | 0 | x | x | x | 0 | x| xx | 1|
 ***************************************************
-###ALU decoder table
+### ALU decoder table
 |  ALUOp | funct |ALUControl|
 | ------- | ------- | -------- |
 | 00 | x | 010 (add) |
@@ -57,6 +57,14 @@ Can perform:
 | 1x | 101010 (slt) | 111 (slt) |
 
 
+*******************************************************
+### ALUOp encoding
+| ALUOp  | meaning |
+| ------------- | ------------- |
+| 00  | add |
+| 01  | subtract  |
+| 10  | look at funct field  |
+| 11  | SHOULD NEVER HAPPEN  |
 
 
 
