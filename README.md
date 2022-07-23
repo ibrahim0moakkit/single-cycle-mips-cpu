@@ -35,7 +35,7 @@ Can perform:
 
 
 
-Instruction   * Opcode * RegWrite * RegDst * ALUSrc * Branch * MemWrite * MemtoReg * ALUOp * Jump
+   *  *  *  *  *  *  *  *  * 
 ***************************************************************************************************
 R-type        * 000000 *    1     *   1    *   0    *    0   *    0     *   0     *   10   *  0
 lw            * 100011 *    1     *   0    *   1    *    0   *    0     *   1     *   00   *  0
@@ -43,6 +43,18 @@ sw            * 101011 *    0     *   X    *   1    *    0   *    1     *   x   
 beq           * 000100 *    0     *   X    *   0    *    1   *    0     *   x     *   01   *  0
 addi          * 001000 *    1     *   0    *   1    *    0   *    0     *   0     *   00   *  0
 j             * 000010 *    0     *   X    *   X    *    x   *    0     *   x     *   xx   *  1
+
+
+|  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|ALUOp|Jump|
+| ------- | ------- | -------- | ------- | ------- | ------ | ------- | ------| --- | -----
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+
+
+
+
 
 
 
