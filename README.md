@@ -5,7 +5,7 @@ Can perform:
 
 🥔
 
-# R-Type insructions:
+## R-Type insructions:
 
 -add
 
@@ -18,7 +18,7 @@ Can perform:
 -slt (set less than)
 
 
-# T-Type instructions:
+## T-Type instructions:
 
 -addi
 
@@ -27,7 +27,7 @@ Can perform:
 -lw
 
 
-# J-Type instructions:
+## J-Type instructions:
 
 -j
 
