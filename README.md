@@ -37,9 +37,10 @@ Can perform:
 
 ### main decoder table
 
-WHERE controls terminal (in verilog code) is
-
-controls = regwrite regdst alusrc branch memwrite memtoreg aluop jump
+WHERE "controls" terminal (in verilog code) is
+               
+               
+               controls = regwrite regdst alusrc branch memwrite memtoreg jump aluop
 
 
 |  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|ALUOp|Jump|
