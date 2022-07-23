@@ -6,19 +6,29 @@ Can perform:
 🥔
 
 R-Type insructions:
+
 -add
+
 -sub
+
 -and
+
 -or
+
 -slt (set less than)
 
 T-Type instructions:
+
 -addi
+
 -sw
+
 -lw
 
 J-Type instructions:
+
 -j
+
 -beq
 
 
