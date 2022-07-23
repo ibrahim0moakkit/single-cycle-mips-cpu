@@ -1,9 +1,8 @@
 # single-cycle-mips-cpu
 32-bit single cycle mips processor
 
-Can perform:
 
-🥔
+Can perform:
 
 ## R-Type insructions:
 
@@ -62,4 +61,8 @@ Can perform:
 
 
 
-       
+
+
+DONE BY IBRAHIM MOAKKIT🎩
+
+
