@@ -67,11 +67,11 @@ output zero);
 always @(*) begin
 
 		case (alu_ctrl)
-			3'b010: out <= a+b;		           //add
-			3'b000: out <= a & b;		       //and
-			3'b001: out <= a | b;		       //or
-			3'b110: out <= a + sub_ab;   	   //sub
-            3'b111: out <= a<b ? 32'b1:32'b0;  //slt
+			3'b010: out <= a+b;          //add
+			3'b000: out <= a & b;        //and
+			3'b001: out <= a | b;        //or
+			3'b110: out <= a + sub_ab;   //sub
+            3'b111: out <= a<b ? 32'b1:32'b0;        //slt
 		
         endcase
       end
