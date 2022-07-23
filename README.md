@@ -2,7 +2,9 @@
 32-bit single cycle mips processor
 
 Can perform:
+
 🥔
+
 R-Type insructions:
 -add
 -sub
