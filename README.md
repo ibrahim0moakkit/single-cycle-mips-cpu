@@ -35,7 +35,7 @@ Can perform:
 
 
 
-
+###main decoder table
 |  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|ALUOp|Jump|
 | ------- | ------- | -------- | ------- | ------- | ------ | ------- | ------| --- | -----|
 | R-Type | 000000 | 1 | 1 | 0 | 0 | 0 | 0 | 10 | 0|
@@ -44,6 +44,19 @@ Can perform:
 | beq | 000100 | 0 | x | 0 | 1 | 0 | x| 01 | 0|
 | addi | 001000 | 1 | 0 | 1 | 0 | 0 | 0| 00 | 0|
 | j | 000010 | 0 | x | x | x | 0 | x| xx | 1|
+***************************************************
+###ALU decoder table
+|  ALUOp | funct |ALUControl|
+| ------- | ------- | -------- |
+| 00 | x | 010 (add) |
+| xx | x | 110 (sub) |
+| 1x | 100000 (add) | 010 (add) |
+| 1x | 100010 (sub) | 110 (sub) |
+| 1x | 100100 (and) | 000(and) |
+| 1x | 100101 (or) | 001 (or) |
+| 1x | 101010 (slt) | 111 (slt) |
+
+
 
 
 
