@@ -93,17 +93,17 @@ In memfile.txt we have the machine code for our program that we will run
 
 
 
-           addi $2, $0, 5 # ALUOut=5 Machine code: 20020005 
+           addi $2, $0, 5 # ALUOut=5 Machine code: 20020005 , $2=5
 
-           addi $3, $0, 12 #   ALUOut=12 Machine code: 2003000c
+           addi $3, $0, 12 #   ALUOut=12 Machine code: 2003000c  , $3=12
            
-           addi $7, $3, -9 # ALUOut=3 Machine code: 2067fff7
+           addi $7, $3, -9 # ALUOut=3 Machine code: 2067fff7   , $7=3
            
-           or $4, $7, $2 # ALUOut=7 Machine code: 00e22025
+           or $4, $7, $2 # ALUOut=7 Machine code: 00e22025 , $4=7
            
-           and $5, $3, $4 #  ALUOut=4  Machine code: 00642824
+           and $5, $3, $4 #  ALUOut=4  Machine code: 00642824 $5=4
            
-           add $5, $5, $4 #  ALUOut=11 Machine code: 00a42820
+           add $5, $5, $4 #  ALUOut=11 Machine code: 00a42820 $5=11
            
            beq $5, $7, end #     Machine code: 10a7000a
            
@@ -123,7 +123,30 @@ In memfile.txt we have the machine code for our program that we will run
 
 
 
+as an example to test our code lets take the line "add $5, $5, $4" 
 
+first the opcode is 00000 
+
+and controls = 110000010 which indicates the operation is R-TYPE instruction from the main decoder table
+
+then ALUOp = 10 which tells us from the ALUOo encoding table to look at funct field as shown in the above tabel
+
+and then alucontrol = 010 and funct = 100000 which indicat that our operation is add.
+
+this line should give us ALUOut = 11 by summing srca + srcb as shown in the figure below
+
+
+
+![simulation](https://user-images.githubusercontent.com/108411357/180621475-8a65e3b7-0d30-4cdf-ad01-cf6f1d51b620.png)
+
+
+
+
+
+
+
+
+********************************************************
 
 
 
