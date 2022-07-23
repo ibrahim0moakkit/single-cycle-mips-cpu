@@ -58,7 +58,7 @@ Can perform:
 
 
 *******************************************************
-### ALUOp encoding
+### ALUOp encoding table
 | ALUOp  | meaning |
 | ------------- | ------------- |
 | 00  | add |
