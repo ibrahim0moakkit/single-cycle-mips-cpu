@@ -17,7 +17,7 @@ Can perform:
 -slt (set less than)
 
 
-## T-Type instructions:
+## I-Type instructions:
 
 -addi
 
