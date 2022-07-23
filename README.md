@@ -43,14 +43,14 @@ WHERE "controls" terminal (in verilog code) is
                controls = regwrite regdst alusrc branch memwrite memtoreg jump aluop
 
 
-|  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|ALUOp|Jump|
+|  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|Jump|ALUOp|
 | ------- | ------- | -------- | ------- | ------- | ------ | ------- | ------| --- | -----|
-| R-Type | 000000 | 1 | 1 | 0 | 0 | 0 | 0 | 10 | 0|
-| lw | 100011 | 1 | 0 | 1 | 0 | 0 | 1| 00 | 0|
-| sw | 101011 | 0 | x | 1 | 0 | 1 | x| 00 | 0|
-| beq | 000100 | 0 | x | 0 | 1 | 0 | x| 01 | 0|
-| addi | 001000 | 1 | 0 | 1 | 0 | 0 | 0| 00 | 0|
-| j | 000010 | 0 | x | x | x | 0 | x| xx | 1|
+| R-Type | 000000 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 10|
+| lw | 100011 | 1 | 0 | 1 | 0 | 0 | 1| 0 | 00|
+| sw | 101011 | 0 | x | 1 | 0 | 1 | x| 0 | 00|
+| beq | 000100 | 0 | x | 0 | 1 | 0 | x| 0 | 01|
+| addi | 001000 | 1 | 0 | 1 | 0 | 0 | 0| 0 | 00|
+| j | 000010 | 0 | x | x | x | 0 | x| 1 | xx|
 ***************************************************
 ### ALU decoder table
 |  ALUOp | funct |ALUControl|
