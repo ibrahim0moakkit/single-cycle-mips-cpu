@@ -35,7 +35,13 @@ Can perform:
 
 
 
-###main decoder table
+### main decoder table
+
+WHERE controls terminal (in verilog code) is
+
+controls = regwrite regdst alusrc branch memwrite memtoreg aluop jump
+
+
 |  Instruction | Opcode |RegWrite|RegDst|ALUSrc|Branch|MemWrite|MemtoReg|ALUOp|Jump|
 | ------- | ------- | -------- | ------- | ------- | ------ | ------- | ------| --- | -----|
 | R-Type | 000000 | 1 | 1 | 0 | 0 | 0 | 0 | 10 | 0|
