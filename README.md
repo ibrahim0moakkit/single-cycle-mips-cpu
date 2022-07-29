@@ -153,5 +153,4 @@ this line should give us ALUOut = 11 by summing srca + srcb as shown in the figu
 
 DONE BY IBRAHIM MOAKKIT🎩
 
-![Screenshot 2022-07-29 231014](https://user-images.githubusercontent.com/108411357/181836325-2a18e7c9-9f3b-4e90-93a0-74d68e1c6ead.png)
 
