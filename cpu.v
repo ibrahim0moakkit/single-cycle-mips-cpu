@@ -5,7 +5,13 @@
   *23/7/2022                       *
   *EE Department Jordan University *
   **********************************/
-  
+//modules hierarchically
+//top module consists of (instruction memory, data memeory) and mips processor
+//mips processor module consists of datapath and controller modules
+//controller module consists of alu decoder and main decoder modules
+//datapath module consists of program counter, register file, alu modules
+
+
 `timescale 1ns/1ns
 module testbench();
 reg clk;
