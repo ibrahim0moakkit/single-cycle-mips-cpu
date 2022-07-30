@@ -140,9 +140,14 @@ this line should give us ALUOut = 11 by summing srca + srcb as shown in the figu
 ![simulation](https://user-images.githubusercontent.com/108411357/180621475-8a65e3b7-0d30-4cdf-ad01-cf6f1d51b620.png)
 
 
+rearranged the design to make it easy to write code
+
+you have controller module and datapath module, and you have mips module which consists of both controller and datapath modules 
+
+top module consists of (instruction memory, data memory, datapath, controller) modules
 
 
-
+![mipsdesign](https://user-images.githubusercontent.com/108411357/181879643-948a21b5-dbbd-40c2-8999-2784339f11d2.jpg)
 
 
 
