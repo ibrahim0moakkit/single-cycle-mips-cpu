@@ -129,11 +129,12 @@ first the opcode is 00000
 
 and controls = 110000010 which indicates the operation is R-TYPE instruction from the main decoder table
 
-then ALUOp = 10 which tells us from the ALUOo encoding table to look at funct field as shown in the above tabel
+then ALUOp = 10 which tells us from the ALUOp encoding table to look at funct field as shown in the above tabel
 
 and then alucontrol = 010 and funct = 100000 which indicat that our operation is add.
 
 this line should give us ALUOut = 11 by summing srca + srcb as shown in the figure below
+
 
 
 
